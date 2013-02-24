@@ -114,6 +114,14 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 Bundle 'gmarik/vundle'
 
+" vim-scripts repos
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'pep8'
+Bundle 'The-NERD-tree'
+Bundle 'AutoComplPop'
+Bundle 'tComment'
+
 " original repos on github
 Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tpope/vim-fugitive'
@@ -128,14 +136,7 @@ Bundle 'reinh/vim-makegreen'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/snipmate-snippets'
-
-" vim-scripts repos
-Bundle 'L9'
-Bundle 'FuzzyFinder'
-Bundle 'pep8'
-Bundle 'The-NERD-tree'
-Bundle 'AutoComplPop'
-Bundle 'tComment'
+Bundle 'nvie/vim-flake8'
 
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -153,9 +154,11 @@ Bundle 'tComment'
 " Open NerdTree
 map <leader>n :NERDTreeToggle<CR>
 
- " Run pep8
+map <leader>v :BundleList<CR>
+
+" Run pep8
 let g:pep8_map='<leader>8'
-  
+
 " Load the Gundo window
 map <leader>g :GundoToggle<CR>
 
@@ -187,6 +190,9 @@ filetype on  "try to detect filetypes
 
 " enable mouse
 set mouse=a
+
+" refresh this (current) file buffer
+nnoremap <leader>b :bufdo e!<CR>
 
 " Copy(yank) and Paste from/to clipboard
 nnoremap <leader>y "*y

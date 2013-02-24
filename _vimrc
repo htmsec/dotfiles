@@ -115,6 +115,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 " original repos on github
+Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-surround'
 Bundle 'tpope/vim-git'
@@ -126,7 +127,6 @@ Bundle 'alfredodeza/pytest.vim'
 Bundle 'reinh/vim-makegreen'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'garbas/vim-snipmate'
-Bundle 'MarcWeber/vim-addon-mw-utils'
 Bundle 'honza/snipmate-snippets'
 
 " vim-scripts repos
@@ -153,6 +153,9 @@ Bundle 'tComment'
 " Open NerdTree
 map <leader>n :NERDTreeToggle<CR>
 
+ " Run pep8
+let g:pep8_map='<leader>8'
+  
 " Load the Gundo window
 map <leader>g :GundoToggle<CR>
 
@@ -180,7 +183,7 @@ nmap <silent><Leader>te <Esc>:Pytest error<CR>
 "                     Shortcuts
 " ==========================================================
 "
-filetype on                   " try to detect filetypes
+filetype on  "try to detect filetypes
 
 " enable mouse
 set mouse=a

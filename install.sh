@@ -5,9 +5,11 @@ function link_file {
 
     if [ -e "${target}" ] && [ ! -L "${target}" ]; then
         mv $target $target.df.bak
+	echo "backed up $HOME/$target to $target.df.bak "
     fi
 
     ln -sf ${source} ${target}
+    echo "$target --> $source"
 }
 
 function unlink_file {
@@ -17,6 +19,7 @@ function unlink_file {
     if [ -e "${target}.df.bak" ] && [ -L "${target}" ]; then
         unlink ${target}
         mv $target.df.bak $target
+	echo "restoring $target from $HOME/$target.df.bak"
     fi
 }
 
@@ -41,8 +44,10 @@ fi
 git submodule update --init --recursive
 git submodule foreach --recursive git pull origin master
 
-setup command-t
-cd _vim/bundle/command-t
+# Install all the bundles
+vim +BundleInstall +qall
+
+# Setup Command-T (required ruby, rake)
+cd _vim/bundle/Command-T
 rake make
 
-vim +BundleInstall +qall

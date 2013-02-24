@@ -1,0 +1,120 @@
+[submodule "bundle/AutoComplPop"]
+  path = bundle/AutoComplPop
+  url = https://github.com/vim-scripts/AutoComplPop.git
+[submodule "bundle/vundle"]
+  path = bundle/vundle
+  url = https://github.com/gmarik/vundle
+[submodule "bundle/vim-surround"]
+  path = bundle/vim-surround
+  url = https://github.com/tpope/vim-surround
+[submodule "bundle/vim-snipmate"]
+  path = bundle/vim-snipmate
+  url = https://github.com/garbas/vim-snipmate
+[submodule "bundle/vim-markdown"]
+  path = bundle/vim-markdown
+  url = https://github.com/plasticboy/vim-markdown
+[submodule "bundle/vim-makegreen"]
+  path = bundle/vim-makegreen
+  url = https://github.com/reinh/vim-makegreen
+[submodule "bundle/vim-git"]
+  path = bundle/vim-git
+  url = https://github.com/tpope/vim-git
+[submodule "bundle/vim-fugitive"]
+  path = bundle/vim-fugitive
+  url = https://github.com/tpope/vim-fugitive
+[submodule "bundle/vim-easymotion"]
+  path = bundle/vim-easymotion
+  url = https://github.com/Lokaltog/vim-easymotion
+[submodule "bundle/tComment"]
+  path = bundle/tComment
+  url = https://github.com/vim-scripts/tComment
+[submodule "bundle/sparkup"]
+  path = bundle/sparkup
+  url = https://github.com/rstacruz/sparkup
+[submodule "bundle/snipmate-snippets"]
+  path = bundle/snipmate-snippets
+  url = https://github.com/honza/snipmate-snippets
+[submodule "bundle/pytest.vim"]
+  path = bundle/pytest.vim
+  url = https://github.com/alfredodeza/pytest.vim
+[submodule "bundle/gundo.vim"]
+  path = bundle/gundo.vim
+  url = https://github.com/sjl/gundo.vim
+[submodule "bundle/The-NERD-tree"]
+  path = bundle/The-NERD-tree
+  url = https://github.com/vim-scripts/The-NERD-tree
+[submodule "bundle/L9"]
+  path = bundle/L9
+  url = https://github.com/vim-scripts/L9
+[submodule "bundle/FuzzyFinder"]
+  path = bundle/FuzzyFinder
+  url = https://github.com/vim-scripts/FuzzyFinder
+[submodule "bundle/Command-T"]
+  path = bundle/Command-T
+  url = https://github.com/wincent/Command-T.git
+[submodule "bundle/fugitive"]
+	path = bundle/fugitive
+	url = http://github.com/tpope/vim-fugitive.git
+[submodule "bundle/surround"]
+	path = bundle/surround
+	url = https://github.com/tpope/vim-surround.git
+[submodule "bundle/git"]
+	path = bundle/git
+	url = https://github.com/tpope/vim-git.git
+[submodule "bundle/command-t"]
+	path = bundle/command-t
+	url = https://github.com/wincent/Command-T.git
+[submodule "bundle/pyflakes"]
+	path = bundle/pyflakes
+	url = https://github.com/mitechie/pyflakes-pathogen.git
+[submodule "bundle/ack"]
+	path = bundle/ack
+	url = https://github.com/mileszs/ack.vim.git
+[submodule "bundle/gundo"]
+	path = bundle/gundo
+	url = https://github.com/sjl/gundo.vim.git
+[submodule "bundle/pydoc"]
+	path = bundle/pydoc
+	url = https://github.com/fs111/pydoc.vim.git
+[submodule "bundle/pep8"]
+	path = bundle/pep8
+	url = https://github.com/vim-scripts/pep8.git
+[submodule "bundle/pytest"]
+	path = bundle/pytest
+	url = https://github.com/alfredodeza/pytest.vim.git
+[submodule "bundle/makegreen"]
+	path = bundle/makegreen
+	url = https://github.com/reinh/vim-makegreen
+[submodule "bundle/tasklist"]
+	path = bundle/tasklist
+	url = https://github.com/vim-scripts/TaskList.vim.git
+[submodule "bundle/nerdtree"]
+	path = bundle/nerdtree
+	url = https://github.com/vim-scripts/The-NERD-tree.git
+[submodule "bundle/ropevim"]
+	path = bundle/ropevim
+	url = https://github.com/sontek/rope-vim.git
+[submodule "bundle/acp"]
+	path = bundle/acp
+	url = https://github.com/vim-scripts/AutoComplPop.git
+[submodule "bundle/solarized"]
+	path = bundle/solarized
+	url = https://github.com/altercation/vim-colors-solarized.git
+[submodule "bundle/markdown"]
+	path = bundle/markdown
+	url = https://github.com/plasticboy/vim-markdown.git
+[submodule "bundle/snipmate"]
+	path = bundle/snipmate
+	url = https://github.com/garbas/vim-snipmate.git
+[submodule "bundle/vim-addon-mw-utils"]
+	path = bundle/vim-addon-mw-utils
+	url = https://github.com/MarcWeber/vim-addon-mw-utils.git
+[submodule "bundle/tlib"]
+	path = bundle/tlib
+	url = https://github.com/tomtom/tlib_vim.git
+[submodule "bundle/snippets"]
+	path = bundle/snippets
+	url = https://github.com/honza/snipmate-snippets.git
+[submodule "bundle/coffee"]
+	path = bundle/coffee
+	url = https://github.com/kchmck/vim-coffee-script.git

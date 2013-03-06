@@ -102,7 +102,7 @@ if has("gui_running")
     " Remove toolbar
     set guioptions-=T
 else
-    colorscheme modslate
+    colorscheme torte
 endif
 "
 "====================================================================
@@ -117,7 +117,7 @@ Bundle 'gmarik/vundle'
 " vim-scripts repos
 Bundle 'L9'
 Bundle 'FuzzyFinder'
-Bundle 'pep8'
+" Bundle 'pep8'
 Bundle 'The-NERD-tree'
 Bundle 'AutoComplPop'
 Bundle 'tComment'
@@ -137,6 +137,7 @@ Bundle 'plasticboy/vim-markdown'
 Bundle 'garbas/vim-snipmate'
 Bundle 'honza/snipmate-snippets'
 Bundle 'nvie/vim-flake8'
+Bundle 'tomtom/tlib_vim'
 
 " non github repos
 "Bundle 'git://git.wincent.com/command-t.git'
@@ -156,8 +157,8 @@ map <leader>n :NERDTreeToggle<CR>
 
 map <leader>v :BundleList<CR>
 
-" Run pep8
-let g:pep8_map='<leader>8'
+" " Run pep8
+" let g:pep8_map='<leader>8'
 
 " Load the Gundo window
 map <leader>g :GundoToggle<CR>

@@ -157,3 +157,10 @@ set -o vi
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
+
+vim=`type -P gvim`
+if [ "$vim" == "" ]; then
+    vim="vim -v"
+fi
+
+alias vim="$vim"

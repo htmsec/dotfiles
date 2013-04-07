@@ -135,7 +135,7 @@ Bundle 'alfredodeza/pytest.vim'
 Bundle 'reinh/vim-makegreen'
 Bundle 'plasticboy/vim-markdown'
 Bundle 'garbas/vim-snipmate'
-Bundle 'honza/snipmate-snippets'
+Bundle 'honza/vim-snippets'
 Bundle 'nvie/vim-flake8'
 Bundle 'tomtom/tlib_vim'
 

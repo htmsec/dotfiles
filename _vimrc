@@ -203,6 +203,15 @@ noremap <leader>fh :LycosaFilesystemExplorerFromHere<CR>
 " Ack searching!
 nmap <leader>a <Esc>:Ack!<space>
 
+" Ack searching!
+nmap <leader>a <Esc>:Ack!
+
+" Jump to the definition of whatever the cursor is on
+map <leader>j :RopeGotoDefinition<CR>
+
+" Rename whatever the cursor is on (including references to it)
+map <leader>r :RopeRename<CR>
+
 " Run django tests
 map <leader>dt :set makeprg=python\ manage.py\ test\|:call MakeGreen()<CR>
 

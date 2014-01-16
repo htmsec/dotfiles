@@ -3,10 +3,8 @@
 #[ -z "$PS1" ] && return
 #[[ $TERM != screen* ]] && exec tmux
 
-xrandr --output DVI-0 --brightness 0.6
-
 #map capslock to escape
-setxkbmap -option caps:escape
+#setxkbmap -option caps:escape
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options

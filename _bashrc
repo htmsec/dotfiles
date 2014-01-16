@@ -1,6 +1,9 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # If not running interactively, don't do anything
-[ -z "$PS1" ] && return
+#[ -z "$PS1" ] && return
+#[[ $TERM != screen* ]] && exec tmux
+
+xrandr --output DVI-0 --brightness 0.6
 
 #map capslock to escape
 setxkbmap -option caps:escape
@@ -14,8 +17,8 @@ HISTCONTROL=ignoreboth
 shopt -s histappend
 
 # for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
-export HISTSIZE=5000
-export HISTFILESIZE=5000
+export HISTSIZE=8000
+export HISTFILESIZE=8000
 
 # check the window size after each command and, if necessary,
 # update the values of LINES and COLUMNS.
@@ -120,6 +123,8 @@ if $TERM_IS_COLOR && ( dircolors --help && ls --color ) &> /dev/null; then
     [[ -f "$POSSIBLE_DIR_COLORS" ]] && [[ -r "$POSSIBLE_DIR_COLORS" ]] && eval `dircolors -b "$POSSIBLE_DIR_COLORS"` && break
   done
 
+  test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
+
   alias ls="ls --color=auto"
   alias ll="ls --color=auto -l"
   alias l='ll'
@@ -127,18 +132,16 @@ if $TERM_IS_COLOR && ( dircolors --help && ls --color ) &> /dev/null; then
   alias grep='grep --color=auto'
   alias fgrep='fgrep --color=auto'
   alias egrep='egrep --color=auto'
-  alias cd..='cd ..'
+
+  if [ -b `which colordiff` ]; then
+    alias diff=colordiff
+  fi
 else
   # No color, so put a slash at the end of directory names, etc. to differentiate.
   alias ls="ls -F"
   alias ll="ls -lF"
   alias l='ll'
   alias la='ll -a'
-fi
-
-# Alias definitions.
-if [ -f ~/.bash_aliases ]; then
-    . ~/.bash_aliases
 fi
 
 parse_git_branch ()
@@ -157,3 +160,28 @@ fi
 
 # bash shell behaves like vim
 set -o vi
+
+# Ubuntu bug wa: Based on http://askubuntu.com/a/132581/32651
+alias gvim='UBUNTU_MENUPROXY= gvim'
+
+vim=`type -P gvim`
+if [ "$vim" == "" ]; then
+    vim="vim -v"
+else
+    vim="gvim -f"
+fi
+
+export EDITOR=$vim
+export SUDOEDITOR=$vim
+
+#virtualenvwraper autoload and setting
+venwrap=`type -P virtualenvwrapper.sh`
+if [ "$venwrap" != "" ]; then
+    source $venwrap
+fi
+WORKON_HOME=$HOME/.virtualenvs
+
+# Alias definitions.
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
